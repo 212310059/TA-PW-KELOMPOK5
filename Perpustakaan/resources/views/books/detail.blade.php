@@ -6,7 +6,6 @@
 
 @section('content')
 <div class="row">
-    {{-- Kolom Kiri: Gambar dan Info Singkat --}}
     <div class="col-md-4">
         <div class="card">
             <img src="{{asset('uploads/'.$book->image)}}" class="card-img-top" alt="{{ $book->title }}">
