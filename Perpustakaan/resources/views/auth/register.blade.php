@@ -22,8 +22,6 @@
 
       <form method="POST" action="{{ route('register') }}">
         @csrf
-
-        {{-- Input Nama Lengkap --}}
         <div class="input-group mb-3">
           <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nama Lengkap">
           <div class="input-group-append">
@@ -37,8 +35,6 @@
               </span>
           @enderror
         </div>
-
-        {{-- Input Alamat Email --}}
         <div class="input-group mb-3">
           <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Alamat Email">
           <div class="input-group-append">
@@ -52,8 +48,6 @@
               </span>
           @enderror
         </div>
-
-        {{-- Input Password --}}
         <div class="input-group mb-3">
           <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Password">
           <div class="input-group-append">
@@ -67,8 +61,6 @@
               </span>
           @enderror
         </div>
-
-        {{-- Input Konfirmasi Password --}}
         <div class="input-group mb-3">
           <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Ketik ulang password">
           <div class="input-group-append">
@@ -77,7 +69,6 @@
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-8">
             <div class="icheck-primary">
