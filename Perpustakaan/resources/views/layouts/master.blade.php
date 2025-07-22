@@ -13,10 +13,8 @@
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
 
-  {{-- Navbar Atas yang Bersih --}}
   @include('partials.nav')
 
-  {{-- Sidebar Utama --}}
   @include('partials.sidebar')
 
   <div class="content-wrapper">
