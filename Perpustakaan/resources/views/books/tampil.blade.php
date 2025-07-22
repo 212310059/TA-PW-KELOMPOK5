@@ -4,7 +4,6 @@
 
 @section('content')
 
-    {{-- Bagian Notifikasi --}}
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{ session('success') }}
@@ -21,8 +20,6 @@
             </button>
         </div>
     @endif
-    
-    {{-- Tombol Tambah Buku (Sekarang Muncul untuk Semua User yang Login) --}}
     @auth
         <div class="row mb-3">
             <div class="col-md-12">
