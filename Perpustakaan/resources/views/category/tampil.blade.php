@@ -4,7 +4,6 @@
 
 @section('content')
 
-    {{-- Bagian untuk menampilkan notifikasi sukses atau error --}}
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{ session('success') }}
